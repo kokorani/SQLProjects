@@ -38,6 +38,17 @@ Gender-based spending patterns.
 Weekend vs. weekday analysis.
 Cumulative spending milestones and transaction speed metrics.
 
+📄 Resume Portal Analytics
+Dataset: Simulated resume-building platform with multiple portals, user activity, and resume creation logs.
+
+Highlights:
+Monitor monthly user registration trends per portal.
+Identify top portals by subscription rate in the last 30 days.
+Detect users with low engagement (fewer than 3 resumes).
+Analyze resume experience for new 2024 Zety subscribers.
+Use window functions to track user behavior over time.
+Handle multi-portal and edge-case data scenarios.
+
 🛠️ Skills Demonstrated
 
 Advanced SQL Functions: Use of CTEs, window functions (RANK(), ROW_NUMBER(), LAG(), LEAD()), date manipulation, and aggregation techniques.
