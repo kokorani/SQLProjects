@@ -1,36 +1,66 @@
-Resume Portal Analytics – SQL Project
+This repository contains a curated collection of SQL-based data analysis projects that demonstrate real-world use cases of SQL in extracting insights from structured datasets. The projects range from exploratory analysis and business intelligence to data transformation and pattern detection.
 
-This project simulates a resume-building platform ecosystem with multiple portals, user registrations, subscriptions, and resume document creation. It is designed to perform SQL-based analytics on user behavior and platform performance.
-🛠️ Technologies Used
-Database: SQL Server / MySQL
-Language: SQL
-Features Used: Joins, CTEs, Aggregations, Filtering, Window Functions
+Each project is built around a realistic dataset and uses SQL to solve specific business or analytical problems. The scripts are designed to showcase proficiency in writing efficient SQL queries, using advanced SQL functions (e.g., CTEs, window functions, aggregations, date functions), and performing data-driven storytelling.
 
-📁 Schema Overview
-portal: List of portals (e.g., Zety, Resume Now, Live Career)
-user_registration: Tracks user registration/subscription data across portals
-resume_doc: Stores resumes created by users, including experience levels
+📌 Projects Overview
 
-🔍 Key Use Cases (Queries)
+🏨 Hotel Booking Analysis
 
-Monthly Registration Trend
-Count of registrations on Resume Now portal for each month in 2024.
-Top Performing Portal
-Identify the portal with the highest subscription rate in the last 30 days.
-Low Resume Activity Users
-Count users who created fewer than 3 resumes.
-Zety Subscribers' First Resume Experience
-List of users who subscribed to Zety in 2024 and their experience on their first resume.
+Dataset: Hotel customers, cities, hotel details, and booking records.
 
-✅ Sample Query Techniques
-JOIN and LEFT JOIN for merging related data
-GROUP BY and HAVING for aggregations
-WINDOW FUNCTIONS like ROW_NUMBER() to rank resume creation dates
-Conditional aggregation using CASE WHEN
-Date filtering with functions like YEAR(), MONTH(), and GETDATE()
+Highlights:
 
-📦 Sample Data
-The project includes insert scripts for meaningful test data, covering edge cases like:
-Users registered on multiple portals
-Subscriptions with and without resume uploads
-Future-dated resumes and cross-year scenarios
+Identify customers with the most bookings in their home city.
+Revenue contribution by female customers.
+Track customer travel behavior across states.
+Hotel occupancy analysis by date and month.
+Booking channel performance and seasonal trends.
+
+🏅 Olympic Athlete Performance Analysis
+
+Dataset: Olympic athlete details and event participation records.
+
+Highlights:
+Team and individual medal tallies.
+Identify historic first medals for countries (e.g., India).
+Medal distribution trends by year and sport.
+Detect athletes with rare or record-setting achievements (e.g., medals in both Summer and Winter Olympics).
+Consecutive performance tracking and player consistency.
+
+💳 Credit Card Transactions Analysis
+
+Dataset: Credit card transactions across Indian cities with gender, card type, expense type, and transaction dates.
+
+Highlights:
+City-wise spending behavior and contribution to total spends.
+Card-type and expense-type trends over time.
+Gender-based spending patterns.
+Weekend vs. weekday analysis.
+Cumulative spending milestones and transaction speed metrics.
+
+🛠️ Skills Demonstrated
+
+Advanced SQL Functions: Use of CTEs, window functions (RANK(), ROW_NUMBER(), LAG(), LEAD()), date manipulation, and aggregation techniques.
+Business Intelligence Thinking: Translating real-world scenarios into SQL queries for KPI tracking and decision-making.
+Optimization: Writing clean, performant queries with proper grouping and filtering logic.
+Storytelling with Data: Building insightful narratives from raw tabular data using SQL.
+
+✅ How to Use
+Clone the repository or download the SQL files.
+Load the respective datasets into your SQL environment (e.g., PostgreSQL, SQL Server, MySQL).
+Run the queries in the provided order to reproduce the analyses.
+Modify and extend the queries as needed to suit your own datasets or use cases.
+
+📁 Folder Structure
+sql-projects/
+│
+├── hotel_booking_analysis.sql
+├── olympic_athlete_analysis.sql
+├── credit_card_transaction_analysis.sql
+└── README.md
+
+🚀 Future Plans
+
+Add more domain-specific SQL projects (e.g., sales, e-commerce, healthcare).
+Include query visualizations using tools like Power BI or Tableau.
+Add versions compatible with multiple SQL dialects (PostgreSQL, MySQL, etc.).
