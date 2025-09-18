@@ -7,10 +7,12 @@ hotel_customers
 hotel_bookings
 
 Setup & Data Cleaning
+
 SELECT * FROM hotel_cities;
 SELECT * FROM hotel_names;
 
 ALTER TABLE hotel_names
+
 DROP COLUMN column5;
 
 SELECT * FROM hotel_customers;
